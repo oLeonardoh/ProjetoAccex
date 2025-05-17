@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Novo Projeto</title>
+    <link rel="stylesheet" href="criarprojeto.css"> <!-- Link para o CSS -->
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <div class="container">
+        <a href="pagprincipal.html"> < Voltar </a>
+        <h1>Criar Novo Projeto</h1>
+        <form id="new-project-form">
+            <label for="project-title">Título do Projeto:</label>
+            <input type="text" id="project-title" name="title" required>
+
+            <label for="project-description">Descrição do Projeto:</label>
+            <textarea id="project-description" name="description" required></textarea>
+
+            <label for="project-technologies">Palavras-Chaves</label>
+            <input type="text" id="project-technologies" name="technologies" placeholder="Ex: HTML, CSS, JavaScript" required>
+
+            <label for="project-team">Selecionar Membros da Equipe:</label>
+            <select id="project-team" name="team" multiple>
+                <option value="membro1">Membro 1</option>
+                <option value="membro2">Membro 2</option>
+                <option value="membro3">Membro 3</option>
+                <option value="membro4">Membro 4</option>
+            </select>
+            <button type="button" id="accept-member">Aceitar Membro</button>
+            <button type="button" id="remove-member">Retirar Membro</button> <!-- Botão para retirar membros -->
+
+            <label for="interested-members">Membros Interessados:</label>
+            <select id="interested-members" name="interested" multiple>
+                <option value="interessado1">Interessado 1</option>
+                <option value="interessado2">Interessado 2</option>
+                <option value="interessado3">Interessado 3</option>
+                <option value="interessado4">Interessado 4</option>
+            </select>
+
+            <button type="submit">Criar Projeto</button>
+        </form>
+    </div>
+
+    <script src="jscriarprojeto.js"></script> <!-- Link para o JavaScript -->
+</body>
+</html>
